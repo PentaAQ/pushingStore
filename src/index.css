@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import '@fontsource-variable/outfit';
+@import '@fontsource-variable/geist-mono';
+
+
+
+body {
+  font-family: 'Outfit Variable', sans-serif;
+  background-color: #fff;
+}
+@theme {
+  --font-mono:'Geist Mono Variable', monospace;
+}
