@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Products } from "../data/Products";
 
 export const Colections = () => {
@@ -14,9 +15,10 @@ export const Colections = () => {
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-5">
         {productos.map((producto, key) => (
-          <div
+          <Link
+            to={`/producto/${producto.id}`}
             key={key}
-            className="w-full h-96 border border-gray-200 rounded-md shadow flex flex-col overflow-hidden"
+            className="w-full h-96 border border-gray-200 rounded-md shadow flex flex-col overflow-hidden hover:scale-105 transition-all duration-300 cursor-pointer"
           >
             <img
               src={producto.image}
@@ -33,13 +35,13 @@ export const Colections = () => {
                 <p className="text-xl font-semibold">
                   $ {producto.price.toFixed(3)}
                 </p>
-                <button className="bg-black text-white px-3 rounded-md flex items-center gap-2">
+                <button className="bg-black text-white px-3 rounded-md flex items-center gap-2 hover:bg-gray-800 transition-all duration-300">
                   <span className="text-2xl font-medium">+</span>
                   <span>Agregar</span>
                 </button>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </section>
     </main>

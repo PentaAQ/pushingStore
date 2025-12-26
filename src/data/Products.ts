@@ -1,4 +1,5 @@
 type Products = {
+  id: number
   category: string;
   name: string;
   description: string;
@@ -8,6 +9,7 @@ type Products = {
 };
 export const Products: Products[] = [
   {
+    id: 1,
     category: "Mobiliaria",
     name: "Silla Moderna Escandinava",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
@@ -16,14 +18,16 @@ export const Products: Products[] = [
     stock: 24,
   },
   {
+    id: 2,
     category: "Iluminación",
     name: "Mesa de Centro Minimalista",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
     price: 35.1,
     image: "/SillaProduct.png",
-    stock: 56,
+    stock: 36,
   },
   {
+    id: 3,
     category: "Decoración",
     name: "Lámpara Colgante Geométrica",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
@@ -32,6 +36,7 @@ export const Products: Products[] = [
     stock: 8,
   },
   {
+    id: 4,
     category: "Mobiliaria",
     name: "Espejo de Pared Circular",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
