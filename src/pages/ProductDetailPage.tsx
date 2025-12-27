@@ -40,7 +40,7 @@ export const ProductDetailPage = () => {
           </p>
           <p className="text-sm lg:flex-1">{productoDetalle?.description}</p>
           <p className="text-xl font-sepibold">
-            S/. {productoDetalle?.price.toFixed(3)}
+            S/. {productoDetalle?.price.toFixed(2)}
           </p>
         </div>
         <div className="flex gap-2">
