@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { Sidebar } from "../components/Sidebar";
 
-export const Layout = () => {
+export const LayoutAdmin = () => {
   return (
     <main className="flex h-screen overflow-hidden">
       <section className="w-16 md:w-64 lg:w-72 transition-all duration-300">

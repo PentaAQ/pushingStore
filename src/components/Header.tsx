@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react";
 import { Products } from "../data/Products";
+import { Link } from "react-router-dom";
 
 type Links = {
   name: string;
@@ -18,12 +19,14 @@ export const Header = () => {
     },
   ];
 
-  const productos = Products
+  const productos = Products;
   return (
     <header className="border-b border-gray-200 h-15 fixed w-full bg-white z-50">
       <div className="w-full max-w-7xl mx-auto flex items-center py-3 px-5">
         <div className="flex gap-5 items-center w-full">
-          <h1 className="font-serif text-xl font-bold uppercase">Minimalist</h1>
+          <Link to="/" className="font-serif text-xl font-bold uppercase">
+            Minimalist
+          </Link>
 
           <label
             htmlFor="btnHamburger"

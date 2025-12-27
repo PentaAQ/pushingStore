@@ -14,7 +14,7 @@ export const Products: Products[] = [
     name: "Silla Moderna Escandinava",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
     price: 45.9,
-    image: "/SillaProduct.png",
+    image: "/Hero.png",
     stock: 24,
   },
   {
@@ -22,7 +22,7 @@ export const Products: Products[] = [
     category: "Iluminación",
     name: "Mesa de Centro Minimalista",
     description: "Diseño ergonómico con líneas limpias y acabado premium",
-    price: 35.1,
+    price: 35.90,
     image: "/SillaProduct.png",
     stock: 36,
   },
